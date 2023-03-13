@@ -6,7 +6,6 @@ ExitProcess proto, dwExitCode:dword
 n byte 3
 sum word 0
 .code
-;Найдите сумму первых n натуральных чисел, которые делятся на 5.
 
 main PROC
 
