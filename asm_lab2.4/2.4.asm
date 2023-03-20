@@ -5,6 +5,7 @@ ExitProcess proto, dwExitCode:dword
 .data
 n dword 23568
 counter byte 0
+k byte 2 ; тут любое другое можно задать
 num word 0
 ten word 10
 IsDifferent byte 1
@@ -30,7 +31,7 @@ cmp dx, num
 jne BeginWhile2
 
 inc counter
-cmp counter, 2
+cmp counter, k
 je DoIfCounter
 jmp BeginWhile2 
 
